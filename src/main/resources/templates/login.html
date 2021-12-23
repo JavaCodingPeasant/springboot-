@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<fieldset style="width: 400px;margin-left: 500px;">
+    <legend style="text-align: center;"> 用户登录</legend>
+    <form action="/user/login" method="post">
+        用户名称:<input name="username"><span th:text="${loginDefeat}" style="color:red;"/><br>
+        用户密码:<input type="password" name="password"><br>
+        <input type="submit" value="登录">&nbsp;&nbsp;&nbsp;
+        <input type="reset" value="取消">
+    </form>
+    还没有账号？<a href="/user/toRegist">注册</a>
+</fieldset>
+</body>
+</html>
